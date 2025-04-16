@@ -1,0 +1,117 @@
+body {
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background: #FFF;
+    width: 500px;
+    height: 656px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.log-reg {
+    padding-top: 52px;
+    padding-left: 171px;
+    padding-right: 172px;
+    font-size: 20px;   
+}
+
+.reg {
+    color: #46A358; 
+}
+
+.form-inputs {
+    display: flex;
+    justify-items: center;
+    margin-left: 100px;
+}
+
+input {
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;  
+}
+.inputsheader {
+    font-size: 13px;
+    font-style: normal;
+    align-items: center;
+    display: inline-flex;
+    margin-left: 70px;
+    margin-right: 100px;
+    padding-right: 45px;
+    line-height: 16px;
+    color: #3D3D3D;
+    font-weight: 400;
+    font-family: "Cera Pro";  
+}
+
+::placeholder {
+    color: #A5A5A5;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 12px 221px 12px 14px;
+}
+
+.regbutton {
+    width: 300px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background-color: #46A358;
+    color: white;
+    border: 1px solid;
+    font-family: "Cera Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.or-reg-text {
+    color: #3D3D3D;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.google-button {
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #727272;
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+}
+
+.fb-button {
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    color: #727272;
+    text-align: center;
+    font-family: "Cera Pro";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+}
+
+
