@@ -11,12 +11,13 @@
 .body {
     font-weight: 400;
     color: #727272;;
+    font-family: Tahoma, sans-serif;
 }
 
 .menu {
     display: inline-block;
     margin-left: 244px;
-    margin-right: 246px;
+    margin-right: 242px;
     width: 351px;
     height: 45px;
     padding-bottom: 25px;
@@ -31,7 +32,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 50px;
+    margin-right: 46px;
     padding-bottom: 18px;
 }
 
@@ -52,8 +53,6 @@
 
 .logo {   
     text-decoration: none;
-    width: 150px;
-    height: 34px;
 }
 
 .headerlog {
@@ -81,22 +80,20 @@
     color: white;
     display: inline-block;
     vertical-align: top;
-    width: 100px;
-    height: 35px;
-    padding-left: 41px;
+    cursor: pointer;
+    padding: 8px 17px 7px 41px;
     border-radius: 6px;
     background: #46A358;
     border: solid transparent;
     background-image: url(../image/Logout.svg);
     background-repeat: no-repeat;
-    background-position: 21px 4px;
+    background-position: 16px 6px;
     font-weight: 700;
 }
 
 .welcome-box {
     display: inline-block;
     width: 669px;
-    height: 450px;
     padding: 68px 0px 85px 40px ;
     vertical-align: top;
 
@@ -158,9 +155,8 @@
 }
 
 .shop-btn {
-    margin-top: 44px;
-    width: 140px;
-    height: 40px;
+    margin-top: 44px; 
+    padding: 11px 27px 9px 26px;
     border-radius: 6px;
     background: #46A358;
     border: solid transparent;
@@ -169,4 +165,5 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 }
