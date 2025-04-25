@@ -8,6 +8,12 @@
     margin: 0 auto;
 }
 
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 .body {
     font-weight: 400;
     color: #727272;;
@@ -120,6 +126,7 @@
 
 .section-box {
     background-color: rgba(245, 245, 245, 0.5);
+    margin-bottom: 46px;
 }
 
 .welcome {
@@ -166,4 +173,182 @@
     line-height: 20px;
     text-transform: uppercase;
     cursor: pointer;
+}
+
+.left-menu {
+    width: 285px;
+    background: #FBFBFB;
+    /* padding-top: 14px;
+    padding-left: 16px;
+    padding-right: 22px; */
+    height: 1244px;
+    float: left;
+    
+}
+
+.left-list {
+    margin-top: 14px;
+    margin-left: 16px;
+    margin-right: 22px;
+}
+
+.categories {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    padding-bottom: 7px;
+}
+
+.categories-list {
+    padding: 0;
+    list-style: none;
+}
+
+.categories-list li {
+    margin-left: 11px;
+    
+}
+
+.categories-list a {
+    text-decoration: none;
+    color: #4E4C4C;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.list-number {
+    float: right;
+}
+
+.categories-list a:hover {
+    color: #46A358;
+    font-weight: 700;
+}
+
+#sale-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.plant-box {
+    width: 915px;
+    float: left;
+}
+
+.allplants {
+    float: left;
+    margin-left: 20px;
+}
+.allplants button {
+    color: #4E4C4C;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 16px;
+    border: none;
+    border-bottom: 2px solid transparent;
+    background-color: transparent;
+    margin-right: 40px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.allplants button:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #46A358;
+    color: #46A358;
+    font-weight: 700;
+}
+
+.sort-by {
+    float: right;
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+    
+}
+
+.sort-by button {
+    border: none;
+    background-color: transparent;
+    color: #3D3D3D;
+    font-size: 15px;
+    line-height: 16px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.plant-section {
+    width: 915px;
+    margin-top: 54px;
+}
+
+.plant-section article {
+    width: 285px;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 70px;
+}
+
+.plant-section div {
+    width: 285px;
+    height: 298px;
+    flex-shrink: 0;
+    border-top: 2px solid transparent;
+    background-color: #FBFBFB;
+}
+
+.plant-section div:hover {
+    border-top: 2px solid #46A358;;
+}
+
+.plant-section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant-section span {
+    display: inline-block;
+    margin-top: 12px;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px; 
+}
+
+.plant-section p {
+    margin-top: 6px;
+    color: #46A358;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.paginator{
+    float: right;
+    margin-top: 70px;
+
+}
+
+.paginator a {
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    text-decoration: none;
+    color: #3D3D3D;
+}
+
+.paginator a:hover {
+    border-color: #46A358 ;
+    background-color: #46A358;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
 }
