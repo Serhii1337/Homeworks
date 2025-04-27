@@ -259,14 +259,15 @@
     height: 350px;
     margin-bottom: 65px;
     border-top: 1px solid transparent;
+    cursor: pointer;
 }
 
 .goods article:hover {
-    border-top: 1px solid #46A358;;
+    border-top: 1px solid #46A358;
 }
 
-.goods div {
-    background-color: #FBFBFB;;
+.goods-bg {
+    background-color: #FBFBFB;
     width: 285px;
     height: 300px;
     display: flex;
@@ -295,32 +296,43 @@
     margin-top: 6px;
 }
 
-.paginator{
-    float: right;
-    margin-top: 70px;
-
+#paginator-box {
+    display: flex;
+    width: 895px;
+    justify-content: end;
 }
 
-.paginator a {
-    display: inline-block;
+#paginator {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 16px;
+    display: flex;   
     text-align: center;
+}
+
+#paginator a {
     width: 35px;
     height: 35px;
+    font-size: 18px;
     line-height: 35px;
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     text-decoration: none;
     color: #3D3D3D;
+    margin-left: 10px;
 }
 
-.paginator a:hover {
-    border-color: #46A358 ;
-    background-color: #46A358;
+#paginator a:hover {
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
+    background-color: #46A358;
+    border-color: #46A358;;
+
 }
+
 
 
 
