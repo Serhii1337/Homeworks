@@ -62,19 +62,18 @@
     text-decoration: none;
 }
 
-#login {
-    width: 100px;
-    height: 35px;
+.header-btn .login {
+    padding: 7px 17px 7px 17px;
     flex-shrink: 0;
     border-radius: 6px;
-    background: #46A358;
+    background-color: #46A358;
     color: #FFF;
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
 }
 
-#login-svg {
+.login div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,8 +135,7 @@
     font-weight: 700;
     line-height: 20px;
     text-transform: uppercase;
-    width: 140px;
-    height: 40px;
+    padding: 10px 26px 10px 26px;
     flex-shrink: 0;
     border: transparent;
 }
@@ -150,7 +148,7 @@
     align-items: end;
 }
 
-#flower {
+.flower {
     width: 135px;
     height: 135px;
     margin: 0 0 17px 35px;
@@ -164,7 +162,7 @@
 .list-box {
     background-color: #FBFBFB;
     width: 285px;
-    height: 1224px;
+    /* height: 1224px; */
 }
 .list {
     margin: 14px 0 0 0;
@@ -240,7 +238,7 @@
     border-bottom: 2px solid #46A358;
 }
 
-#sorting {
+.sorting {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -256,8 +254,8 @@
 
 .goods article {
     width: 285px;
-    height: 350px;
-    margin-bottom: 65px;
+    /* height: 350px; */
+    margin-bottom: 70px;
     border-top: 1px solid transparent;
     cursor: pointer;
 }
@@ -296,13 +294,13 @@
     margin-top: 6px;
 }
 
-#paginator-box {
+.paginator-box {
     display: flex;
     width: 895px;
     justify-content: end;
 }
 
-#paginator {
+.paginator {
     color: #3D3D3D;
     font-size: 18px;
     font-weight: 300;
@@ -311,7 +309,7 @@
     text-align: center;
 }
 
-#paginator a {
+.paginator a {
     width: 35px;
     height: 35px;
     font-size: 18px;
@@ -324,7 +322,7 @@
     margin-left: 10px;
 }
 
-#paginator a:hover {
+.paginator a:hover {
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
