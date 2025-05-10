@@ -46,6 +46,18 @@
     font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -70,7 +82,11 @@
     align-items: center;
     height: 78px;
     padding-top: 14px;
-    margin-top: 12px;
+}
+
+.logo:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .menu {
@@ -98,7 +114,7 @@
 
 .menu > li > a:hover {
     border-bottom: 3px solid #46A358;
-    font-weight: 700;
+    transition: 0.3s;
 }
 
 .menu > li > ul {
@@ -115,6 +131,7 @@
 
 .menu > li:hover > ul {
     display: block;
+    transition: 0.3s;
 }
 
 
@@ -128,14 +145,15 @@
     top: -62px;
 }
 
-.menu > li > ul > li:nth-child(4) {
+.menu > li > ul > .priming-dropdown-menu {
     background-image: url(../image/arrow.svg);
     background-repeat: no-repeat;
     background-position: right 17px center;
 }
 
-.menu > li > ul > li:nth-child(4):hover {
+.menu > li > ul > .priming-dropdown-menu:hover {
     background-image: url(../image/arrow-hower.svg);
+    transition: 0.3s;
 }
 
 .menu > li > ul > li > a {
@@ -147,7 +165,7 @@
     padding-right: 100%;
 }
 
-.menu li:nth-child(3) ul li:nth-child(4) a {
+.menu li ul .priming-dropdown-menu a {
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
@@ -161,15 +179,18 @@
 .menu > li > ul > li:hover > a {
     color: #FFF;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 .menu > li > ul > li:hover {
     background-color: #1A712A;
+    transition: 0.3s;
 }
 
 .menu > li:hover > a {
     border-bottom: 3px solid #46A358;
-    font-weight: 700;
+    color: #1A712A;
+    transition: 0.3s;
 }
 
 .menu > li > ul > li > ul {
@@ -188,6 +209,7 @@
     background-color: #1A712A;
     color: #FFF;
     font-weight: bold;
+    transition: 0.3s;
 
 }
 
@@ -217,21 +239,23 @@
 }
 
 .lupa {
-    margin-right: 18px;
+    margin-right: 31px;
 }
 
-.lupa button:hover svg {
+.lupa:hover path {
     fill: #46A358;
+    transition: 0.3s;
 }
 
 .cart {
     position: relative;
-    margin-right: 30px;
-    margin-bottom: 3px;    
+    margin-right: 34px;
+    margin-bottom: 4px;    
 }
 
-.cart button:hover svg {
+.cart:hover path {
     fill: #46A358;
+    transition: 0.3s;
 }
 
 .count {
@@ -248,7 +272,7 @@
     text-align: center;
     position: absolute;
     top: 2px;
-    right: 0px;
+    right: -2px;
 
 }
 
@@ -264,12 +288,19 @@
     margin-bottom: 6px;
 }
 
+.header-btn .login:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .login div {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 61px;
 }
+
+
 
 .lets-section {
     margin-top: 12px;
@@ -332,6 +363,11 @@
     cursor: pointer;
 }
 
+.shop-now:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .lets-img {
     width: 40%;
 }
@@ -382,8 +418,59 @@
 .list a:hover {
     color: #46A358;
     font-size: 15px;
-    font-weight: 700;
     line-height: 40px;
+    transition: 0.3s;
+}
+
+.checkbox-box {
+    background-color: #FBFBFB;
+    padding: 46px 22px 17px 16px;
+}
+
+.checkbox-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.checkbox-text {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.checkbox-text:hover {
+    color: #46A358;
+    transition: 0.3s;
+}
+
+.checkbox-text::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #3D3D3D;
+    background-color: #FFF;
+    border-radius: 3.5px;
+    margin: 15px 11px;
+}
+
+.checkbox-number1 {
+    padding-left: 130px;
+}
+
+.checkbox-number2 {
+    padding-left: 117px;
+}
+
+.checkbox-number3 {
+    padding-left: 135px
+}
+
+.checkbox-input:checked + .checkbox-text::before {
+    background-image: url(../image/checked.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sale-img {
@@ -430,21 +517,34 @@
 
 .menu-goods .goods-btn:hover {
     border-bottom: 2px solid #46A358;
+    color: #46A358;
+    transition: 0.3s;
 }
 
 .sorting-box {
     display: flex;
     width: 204px;
     justify-content: end;
+    align-items: baseline;
 }
 
 .default-sorting {
+    font-family: 'Cera Pro';
     margin-right: 10px;
+    color: #3D3D3D;
+}
+
+.sorting:hover .default-sorting {
+    color: #46A358;
+    transition: 0.3s;
+}
+
+.sorting:hover path {
+    stroke: #46A358;
+    transition: 0.3s;
 }
 
 .sorting {
-    display: inline-flex;
-    align-items: center;
     gap: 14px;
     border: none;
     cursor: pointer;
@@ -476,6 +576,8 @@
 
 .item-inset:hover {
     border-top: 1px solid #46A358;
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .goods-bg {
@@ -496,7 +598,6 @@
     width: 134px;
     justify-content: space-between ;
     display: none;
-
 }
 
 .goods-hover button {
@@ -511,11 +612,12 @@
 
 .goods-bg:hover .goods-hover {
     display: flex;
-    
+    transition: 0.3s;  
 }
 
-.goods-hover a button svg:hover {
+.goods-hover button:hover path {
     fill: #46A358;
+    transition: 0.3s;
 }
 
 
@@ -549,6 +651,11 @@
     font-weight: 400;
     line-height: 16px;
     margin-top: 12px;
+}
+
+.item-inset:hover h3 {
+    color: #46A358;
+    transition: 0.3s;
 }
 
 .goods p {
@@ -593,8 +700,13 @@
     font-size: 18px;
     font-weight: 700;
     background-color: #46A358;
-    border-color: #46A358;;
+    border-color: #46A358;
+    transition: 0.3s;
+}
 
+.paginator a:hover path {
+    stroke: #FFF;
+    transition: 0.3s;
 }
 
 .goods-info {
@@ -670,7 +782,11 @@
     background-repeat: no-repeat;
     background-position: center right 27px;
     cursor: pointer;
+}
 
+.goods-info-btn:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .our-blog {
@@ -738,20 +854,28 @@
 
 .our-blog-item-btn {
     border: none;
+    color: #3D3D3D;
     background-color: transparent;
     font-size: 14px;
     font-weight: 500;
     line-height: 16px;
     padding: 2px 23px 2px 0;
-    background-image: url(../image/arrow-read-more.svg);
-    background-repeat: no-repeat;
-    background-position: center right;
     cursor: pointer;
     font-family: "Cera Pro";
 }
 
+.our-blog-item-btn::after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='9' viewBox='0 0 13 9' fill='none'%3E%3Cpath d='M0.711426 4.37751C0.711426 4.14172 0.909715 3.94685 1.16698 3.91601L1.2385 3.91175L11.78 3.91175C12.0711 3.91175 12.3071 4.12028 12.3071 4.37751C12.3071 4.6133 12.1088 4.80817 11.8515 4.83901L11.78 4.84326L1.2385 4.84326C0.947406 4.84326 0.711426 4.63474 0.711426 4.37751Z' fill='currentColor'/%3E%3Cpath d='M7.15665 0.966403C6.95037 0.784908 6.94965 0.49001 7.15504 0.30773C7.34176 0.142022 7.63454 0.126433 7.84121 0.261329L7.90044 0.306312L12.1522 4.04724C12.3403 4.21273 12.3574 4.47238 12.2035 4.655L12.1522 4.70731L7.90047 8.44886C7.69421 8.63037 7.36048 8.62976 7.15507 8.4475C6.96834 8.2818 6.95193 8.02302 7.10546 7.84097L7.15661 7.78882L11.0331 4.3771L7.15665 0.966403Z' fill='currentColor'/%3E%3C/svg%3E");
+    margin-left: 10px;
+}
+
+.our-blog-item-btn:hover {
+    color: #46A358;
+    transition: 0.3s;
+}
+
 .our-blog-item-img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -837,6 +961,12 @@
     font-weight: 700;
     line-height: 16px;
     padding: 12px 17px 12px 34px;
+    cursor: pointer;
+}
+
+.join-box-btn:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .join-form {
@@ -866,6 +996,11 @@
     margin-right: 113px;
 }
 
+.contacts-logo:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .location {
     color: #3D3D3D;
     font-size: 14px;
@@ -878,6 +1013,12 @@
 
 }
 
+.location:hover {
+    color: #46A358;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .email {
     color: #3D3D3D;
     font-size: 14px;
@@ -888,6 +1029,12 @@
     margin-left: 10px;
 }
 
+.email:hover {
+    color: #46A358;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .phone {
     color: #3D3D3D;
     font-size: 14px;
@@ -895,6 +1042,12 @@
     line-height: 22px;
     text-decoration: none;
     margin-left: 8px;
+}
+
+.phone:hover {
+    color: #46A358;
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .footer {
@@ -934,6 +1087,12 @@
     text-decoration: none;
 }
 
+.my-acc-link:hover {
+    color: #46A358;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .help {
     display: flex;
     flex-direction: column;
@@ -967,6 +1126,11 @@
     margin-right: 4px;
 }
 
+.social-media-link:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
 .payment {
     padding-left: 12px;
 }
@@ -976,6 +1140,11 @@
     font-weight: 700;
     line-height: 16px;
     margin-bottom: 13px;
+}
+
+.payment-img:hover {
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
 .greenshop2021 {
