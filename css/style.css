@@ -438,6 +438,7 @@
     align-items: center;
     font-size: 15px;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .checkbox-text:hover {
