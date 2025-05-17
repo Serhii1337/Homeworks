@@ -422,6 +422,73 @@
     transition: 0.3s;
 }
 
+.price-range {
+    background-color: #FBFBFB;
+    padding: 36px 60px 0 16px;
+}
+
+.price-range-slider {
+    height: 4px;
+    border-radius: 2px;
+    background: rgba(70, 163, 88, 0.20);
+    position: relative;
+    margin-left: 11px;
+    margin-bottom: 18px;
+    
+}
+
+.price-range-slider-line {
+    background-color: #46A358;
+    height: inherit;
+}
+
+.price-range-slider-btn {
+    cursor: pointer;
+    width: 21px;
+    height: 21px;
+    background-color: #46A358;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price-range-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 26px;
+    
+}
+
+.price-range-text {
+    margin-left: 11px;
+    margin-bottom: 15px;
+}
+
+.price-range-filter {
+    margin-left: 11px;
+    color: #FFF;
+    font-family: 'Cera Pro';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 8px 23px 7px 24px;
+    background-color: #46A358;
+    border-radius: 6px;
+    border: none;
+}
+
+.price-range-price {
+    color: #46A358;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+
+
 .checkbox-box {
     background-color: #FBFBFB;
     padding: 46px 22px 17px 16px;
@@ -431,6 +498,14 @@
     font-size: 18px;
     font-weight: 700;
     line-height: 16px;
+}
+
+.checkbox-item {
+    margin-bottom: -17px;
+}
+
+.checkbox-item3 {
+    margin-bottom: -4px;
 }
 
 .checkbox-text {
