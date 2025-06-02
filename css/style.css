@@ -1316,12 +1316,9 @@
 }
 
 @media (max-width: 767px) {
-    .goods-bg {
-        height: 221px;
-    }
     .item {
         width: 100%;
-        margin: 0 auto;
+        margin: 0 20px;
     }
     .our-blog-box {
         flex-wrap: wrap;
