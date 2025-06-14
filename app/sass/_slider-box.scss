@@ -1,0 +1,30 @@
+.slider-box {
+    overflow-x: auto;
+    &__slider {
+        display: flex;
+    }
+    &__categories {
+        color: #B3B3BA;
+        font-size: 30px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+    &__text-box {
+        margin-top: 30px;
+        border-top: 4px solid rgba(255, 255, 255, 0.30);
+    }
+    &__title {
+        color:#FFF;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 30px;
+        align-self: stretch;
+    }
+    &__text {
+        color: #FFF;
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 1.57em;
+        margin-top: 30px;
+    }
+}
