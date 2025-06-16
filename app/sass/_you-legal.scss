@@ -21,3 +21,12 @@
         color: #F0145A;
     }
 }
+
+@media (min-width: 768px) {
+    .you-legal {
+        margin-top: 289px;
+        &__title {
+            margin-bottom: 417px;
+        }
+    }
+}

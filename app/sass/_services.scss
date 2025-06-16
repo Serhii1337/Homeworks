@@ -46,3 +46,24 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .services {
+        margin-top: 60px;
+        &__title {
+            margin-bottom: 60px;
+        }
+        &__box {
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .services {
+        &__box {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

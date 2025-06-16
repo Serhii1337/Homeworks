@@ -9,6 +9,10 @@ body {
     font-style: normal;
 }
 
+body.menu-open {
+  overflow: hidden;
+}
+
 .wrapper {
     max-width: 1440px;
     min-width: 375px;
