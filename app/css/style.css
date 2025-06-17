@@ -313,6 +313,23 @@ body.menu-open {
   .header__list a.active {
     color: #FFF;
   }
+  .header__list_about a {
+    color: #24A3FF;
+  }
+  .header__list_about a.active {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
+    border-radius: 0;
+  }
+  .header__adress_about {
+    color: #B3B3BA;
+  }
+  .header__adress::after {
+    background-color: #B3B3BA;
+  }
+  .header__adress::before {
+    background-color: #B3B3BA;
+  }
 }
 @media (min-width: 992px) {
   .header {
@@ -339,6 +356,44 @@ body.menu-open {
     margin-left: 15px;
   }
 }
+.header__lang_about a {
+  color: #B3B3BA;
+}
+.header__lang_about a.active {
+  color: #fff;
+}
+.header__btn_about {
+  background-image: url(../img/hamburger-about.svg);
+}
+.header.active .header__btn_about {
+  background-image: url(../img/close.svg);
+}
+.header__phone_about {
+  color: #B3B3BA;
+}
+.header__logo {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header__logo span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #323264;
+  font-size: 20px;
+  font-weight: 400;
+}
+.header__logo span::before {
+  content: "";
+  background-image: url(../img/slash.svg);
+  width: 12px;
+  height: 26px;
+}
+
 .you-legal {
   margin-top: 129px;
 }
@@ -510,6 +565,35 @@ body.menu-open {
   }
   .slider-box__title {
     margin-top: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .slider-box__pc-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slider-box__slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-right: 60px;
+  }
+  .slider-box__text-box {
+    margin-top: 0;
+    border-top: 0;
+    border-left: 4px solid rgba(255, 255, 255, 0.3);
+    padding-left: 60px;
+  }
+  .slider-box__title {
+    margin-top: 0;
+  }
+  .slider-box__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 .services {
@@ -977,5 +1061,201 @@ body.menu-open {
   .footer__mail {
     margin: 0;
   }
+}
+.merits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.merits__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.merits__text-box h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.merits__text-box p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.57em;
+}
+.merits__text-down {
+  margin-top: 30px;
+}
+.merits__statistic-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  padding-left: 30px;
+  border-left: 4px solid #E6E6F0;
+}
+.merits__statistic-box span {
+  font-size: 36px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+.merits__statistic-box p:not(:last-child) {
+  margin-bottom: 40px;
+}
+.merits__number1::before {
+  content: "";
+  background-image: url(../img/flag-about.svg);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 8px;
+}
+.merits__number2::before {
+  content: "";
+  background-image: url(../img/bag-about.svg);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 8px;
+}
+.merits__number3::before {
+  content: "";
+  background-image: url(../img/star-about.svg);
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 8px;
+}
+
+@media (min-width: 992px) {
+  .merits {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .merits__text-box {
+    width: 60%;
+    padding-right: 30px;
+  }
+  .merits__text-box h2 {
+    font-size: 38px;
+  }
+  .merits__statistic-box {
+    width: 40%;
+  }
+}
+.team {
+  width: 100%;
+}
+
+.team__pic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.quality {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.quality__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.quality__box h2 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.quality__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.quality__text-box p {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 1.57em;
+}
+.quality__text-box p:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .quality__box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .quality__box h2 {
+    font-size: 38px;
+    margin-top: 0;
+    width: 40%;
+  }
+  .quality__text-box {
+    width: 60%;
+    padding-right: 30px;
+  }
+}
+.achievements {
+  background-color: #F5F5FA;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.achievements h3 {
+  text-align: center;
+  color: #323264;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.achievements__slider {
+  margin-top: 30px;
+}
+.achievements__slider-item {
+  padding: 24px;
+  background-color: #FFF;
+  border-radius: 12px;
+  margin: 0 20px;
+}
+.achievements__slider-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

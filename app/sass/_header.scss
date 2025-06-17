@@ -182,6 +182,28 @@
     .header__list a.active {
         color: #FFF;
     }
+    .header__list_about {
+        a {
+            color: #24A3FF;
+        }
+        a.active {
+            color: #F0145A;
+            border-bottom: 2px solid #F0145A;
+            border-radius: 0;
+        }
+        a:hover {
+
+        }
+    }
+    .header__adress_about {
+        color: #B3B3BA;
+    }
+    .header__adress::after {
+        background-color: #B3B3BA;
+    }
+    .header__adress::before {
+        background-color: #B3B3BA;
+    }
 }
 
 @media (min-width: 992px) {
@@ -206,3 +228,40 @@
         margin-left: 15px;
     }
 }
+
+.header {
+    &__lang_about {
+        a {
+            color: #B3B3BA;
+        }
+        a.active {
+            color: #fff;
+        }
+    }
+    &__btn_about {
+        background-image: url(../img/hamburger-about.svg);
+    }
+    .header.active &__btn_about{
+        background-image: url(../img/close.svg);
+    }
+    &__phone_about {
+        color: #B3B3BA;
+    }
+    &__logo {
+        align-items: flex-start;
+        span {
+            display: flex;
+            align-items: center;
+            color: #323264;
+            font-size: 20px;
+            font-weight: 400;
+        }
+        span::before {
+            content: '';
+            background-image: url(../img/slash.svg);
+            width: 12px;
+            height: 26px;
+        }
+    }
+}
+

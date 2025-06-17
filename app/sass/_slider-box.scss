@@ -41,3 +41,30 @@
         }
     }
 }
+
+@media (min-width: 992px) {
+    .slider-box {
+        &__pc-box {
+            display: flex;
+        }
+        &__slider {
+            flex-direction: column;
+            align-items: flex-end;
+            margin-right: 60px;
+        }
+        &__text-box {
+            margin-top: 0;
+            border-top: 0;
+            border-left: 4px solid rgba(255, 255, 255, 0.30);
+            padding-left: 60px;
+        }
+        &__title {
+            margin-top: 0;
+        }
+        &__item {
+            &:not(:last-child) {
+            margin-bottom: 30px;
+            }
+        }
+    }
+}
