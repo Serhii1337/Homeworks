@@ -10,6 +10,11 @@
         font-size: 30px;
         font-weight: 700;
         white-space: nowrap;
+        cursor: pointer;
+    }
+    &__categories:hover {
+        color: #F0145A;
+        transition: 0.3s;
     }
     &__text-box {
         margin-top: 30px;
